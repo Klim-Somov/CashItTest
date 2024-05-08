@@ -1,0 +1,33 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><img src="/static/media/modal-close.png" alt=""></span>
+            </button>
+            <div class="modal-body">
+                <p class="title">
+                    Оставьте Ваши контакты и Мы свяжемся с вами в ближайшее время
+                </p>
+                <div class="modal-form">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                        <div class="modal-con">
+                            <div class="modal-con-checkbox">
+                                <label for="input-check">
+                                    <input type="checkbox" id="input-check" required>
+                                </label>
+                            </div>
+                            <div class="modal-con-text">
+                                <p>
+                                    Я согласен на обработку персональных данных согласно <a href="#">Политике конфиденциальности</a>
+                                </p>
+                            </div>
+                        </div>
+                        <input class="form-sub flex-btn" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

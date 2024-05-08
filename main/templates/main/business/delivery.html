@@ -1,0 +1,106 @@
+{% extends "new_base.html" %}
+{% load static %}
+
+{% block title %}
+Курьерские службы
+{% endblock %}
+
+
+{% block content %}
+<div class="container-fluent margin-top-s">
+    <div class="container business-1">
+        <h1>Курьерские службы</h1>
+        <p class="regular">
+            Работаете с Delivery Club, Самокат и другими
+            курьерскими службами, или вы сами организовали
+            компанию по доставке? Поможем автоматизировать
+            выплаты вашим курьерам.
+        </p>
+        <a class="large-btn" href="#answer-request">Узнать о возможностях сервиса</a>
+        <img src="/static/media/deliveryguy.png">
+    </div>
+</div>
+
+<div class="container-fluent padding-top-s">
+    <div class="container business-2">
+        <h2>Какие возможности дает сервис</h2>
+        <div class="row abilities">
+            <div class="ability-block">
+                <img src="/static/media/application.png">
+                <h4>Загрузка зарплатных
+                    ведомостей — расчет всех
+                    курьеров двумя кликами</h4>
+                <p>Сервис позволяет производить выплаты курьерам в 2 клика, загрузите ведомость в систему и нажмите
+                    выплатить. Экономьте свое время и автоматизируйте рутинные процессы</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/courier.png">
+                <h4>Автодобавление новых
+                    курьеров</h4>
+                <p>Вам не нужно вносить курьеров вручную, в сервисе есть инструменты, которые позволяют добавлять всех
+                    новых курьеров разом</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/rubuparrow.png">
+                <h4>Низкая комиссия за вывод средств, от 0,7%</h4>
+                <p>Фиксированные ставки комиссий, возможность регулировать ставки для водителей через личный кабинет
+                    сервиса</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/agreement.png">
+                <h4>Дистанционное подписание договора с курьерами</h4>
+                <p>Сервис позволят дистанционно подписывать оферты с курьерами и выгружать статусы и даты подписания в
+                    рамках каждой службы</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/cards.png">
+                <h4>Индивидуальные и массовые
+                    настройки по выплатам</h4>
+                <p>В вашей службе работают курьеры с разными условиями и от разных курьерских служб? Через ваш личный
+                    кабинет в сервисе возможно произвести массовые и индивидуальные настройки для выплат в каждой группе
+                    курьеров</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/bag.png">
+                <h4>Помощь в безопасной
+                    бизнес-модели</h4>
+                <p>Проконсультируем какие модели бизнеса легальны и безопасны для рынка и закрепим вашу безопасность
+                    офертами и дистанционным подписанием с вашими курьерами</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/integration.png">
+                <h4>Разработаем приложение с вашим брендом</h4>
+                <p>Разрабатываем приложение с вашим брендом со всеми возможностями сервиса — быстро, доступно и
+                    эффективно.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluent margin-top-s">
+    <div class="container business-3">
+        <div class="cbf-wide-description">
+            <h2>Даете курьерам в аренду 
+                велосипеды, машины? 
+                Поможем <span class="red">автоматизировать</span> 
+                пополнение вашего счета.</h2>
+            <p>Предоставляем несколько возможных сценариев оплаты аренды 
+                за технику: с балансов курьеров, с пополнением вашего расчетного 
+                счета через оплату с карты курьера и другие варианты в рамках 
+                возможностей платежных систем.</p>
+                <img src="/static/media/deliveryguy2.png">
+        </div>
+        {% include 'include//_callback_form.html' %}
+    </div>
+</div>
+
+<div class="business-4 margin-top-l">
+    {% include 'include//common_screens/_how_it_works.html' %}
+</div>
+<div class="business-5 margin-top-l">
+    {% include 'include//common_screens/_staff.html' %}
+</div>
+<div class="business-6 margin-top-l margin-bottom-l">
+    {% include 'include//common_screens/_contact_with_us.html' %}
+</div>
+{% endblock %}

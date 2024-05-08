@@ -1,0 +1,87 @@
+{% extends "new_base.html" %}
+{% load static %}
+
+{% block title %}
+Биржи фрилансеров
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluent margin-top-s ">
+    <div class="container business-1">
+        <h1>Биржи фрилансеров</h1>
+        <p class="slim">
+            Работаете с фрилансерами по всему миру?
+            Поможем автоматизировать выплаты
+        </p>
+        <a class="large-btn" href="#answer-request">Узнать о возможностях сервиса</a>
+        <img src="/static/media/freelancer.png">
+    </div>
+</div>
+
+<div class="container-fluent padding-top-s">
+    <div class="container business-2">
+        <h2>Какие возможности дает сервис</h2>
+        <div class="row abilities">
+            <div class="ability-block">
+                <img src="/static/media/cards.png">
+                <h4>Индивидуальные
+                    или массовые выплаты</h4>
+                <p>Вы работаете с сотрудниками с разными условиями и от разных заказчиков? Через ваш личный кабинет в
+                    сервисе возможно произвести массовые и индивидуальные настройки для выплат для каждой группы</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/billing.png">
+                <h4>Внутренний биллинг</h4>
+                <p>Осуществляем в сервисе расчет дохода от выполненной услуги, с учетом комиссии биржи</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/rubuparrow.png">
+                <h4>Низкая комиссия за вывод средств, от 0,7%</h4>
+                <p>Фиксированные ставки комиссий, возможность регулировать ставки для водителей через личный кабинет
+                    сервиса</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/agreement.png">
+                <h4>Подписание договора
+                    с фрилансером в приложении</h4>
+                <p>Сервис позволят дистанционно подписывать оферты прямо в приложении и выгружать статусы и даты
+                    подписания в рамках каждой группы фрилансеров</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/integration.png">
+                <h4>Интеграция с вашими
+                    учетными системами</h4>
+                <p>Вы уже работаете в своей учетной системе? Сервис интегрируется по открытому API с любой внешней
+                    учетной системой</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluent margin-top-s">
+    <div class="container business-3">
+        <div class="cbf-wide-description">
+            <h2>Доработаем сервис под 
+                ваши запросы</h2>
+            <p>Дорабатываем сервис под запросы рынка, 
+                свяжитесь с нами и сообщите, что необходимо вам 
+                для комфортной и эффективной работы</p>
+                <img src="/static/media/freelancer2.png">
+        </div>
+        {% include 'include//_callback_form.html' %}
+    </div>
+</div>
+
+<div class="business-4 margin-top-l">
+    {% include 'include//common_screens/_how_it_works.html' %}
+</div>
+<div class="business-5 margin-top-l">
+    {% include 'include//common_screens/_staff.html' %}
+</div>
+<div class="business-6 margin-top-l margin-bottom-l">
+    {% include 'include//common_screens/_contact_with_us.html' %}
+</div>
+
+{% endblock %}

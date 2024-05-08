@@ -1,0 +1,32 @@
+{% extends "new_base.html" %} {% load static %} {% block title %} Моментальные выплаты {% endblock %} {% block content %}
+
+<div class="container-fluent margin-top-s">
+  <div class="container features ">
+    <h1>Моментальные выплаты</h1>
+    <h1>физлицам вне зависимости от формы занятости</h1>
+    <p class="regular">
+      Возможность получать деньги моментально 24/7 - не заставляйте ваших
+      сотрудников и исполнителей ждать день выплат, сделайте это своим
+      преимуществом
+    </p>
+    <img src="/static/media/other.png" />
+  </div>
+</div>
+
+<div class="margin-bottom-l">
+  {% include 'include//common_screens/_how_it_works-payment.html' %}
+</div>
+<div class="container margin-top-s">
+  <h3 class="margin-bottom-l text-center">
+    Сервис позволят дистанционно подписывать договоры-оферты с физлицами и
+    выгружать акцепт оферты с датами подписания в рамках каждой службы.
+  </h3>
+</div>
+
+<div id="form-bottom" class="container-fluent margin-bottom-l">
+  <div class="container business-3">
+    {% include 'include//_callback_form.html' %}
+  </div>
+</div>
+
+{% endblock %}

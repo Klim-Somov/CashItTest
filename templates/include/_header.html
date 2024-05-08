@@ -1,0 +1,68 @@
+{% load settings_tags %}
+{% load activeurl %}
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                {% include 'include/_logo_head.html' %}
+            </div>
+            <div class="col-6">
+                <div class="menu-block">
+                    {% activeurl css_class='menu-active' %}
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a class="menu-link" href="{% url 'business' %}"><span>Бизнесу</span></a>
+                            {% include 'include/_menu_two.html' %}
+                        </li>
+                        {% include 'include/_menu.html' %}
+                    </ul>
+                    {% endactiveurl %}
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="header-btn">
+                    <a class="flex-btn" href="" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="header-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                {% include 'include/_logo_head.html' %}
+            </div>
+            <div class="col-8">
+                <div class="header-none-block">
+                    <div class="header-btn leave-mob">
+                        <a class="flex-btn" href="" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a>
+                    </div>
+                    <div class="bars">
+                        <img src="/static/media/bars.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-none-block" style="display: none;">
+        <img src="/static/media/close.png" alt="" class="close-none">
+        {% activeurl css_class='menu-active' %}
+        <ul class="menu-none">
+            <li class="menu-item have-two">
+                <a class="menu-link" href="#"><span>Бизнесу <span class="two-icon icon-top">▲</span><span class="two-icon icon-bottom">▲</span></span></a>
+                {% include 'include/_menu_two.html' %}
+            </li>
+            {% include 'include/_menu.html' %}
+        </ul>
+        {% endactiveurl %}
+        <div class="menu-none-line"></div>
+        <a href="tel: {% settings_value 'PHONE' %}" class="menu-none-link">{% settings_value 'PHONE' %}</a>
+        <a href="mailto: {% settings_value 'EMAIL' %}" class="menu-none-link">{% settings_value 'EMAIL' %}</a>
+        <div class="header-btn">
+            <a class="flex-btn" href="#" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a>
+        </div>
+    </div>
+</header>

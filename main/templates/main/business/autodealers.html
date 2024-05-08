@@ -1,0 +1,83 @@
+{% extends "new_base.html" %}
+{% load static %}
+
+{% block title %}
+Автосалоны
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluent margin-top-s">
+    <div class="container business-1">
+        <h1>Автосалоны</h1>
+        <p class="slim">
+            Покупаете автомобили у физических лиц?
+            Сделаем процесс выплаты быстрым
+            и комфортным.
+        </p>
+        <a class="large-btn" href="#answer-request">Узнать о возможностях сервиса</a>
+        <img src="/static/media/autodealer.png">
+    </div>
+</div>
+
+<div class="container-fluent padding-top-s">
+    <div class="container business-2">
+        <h2>Какие возможности дает сервис</h2>
+        <div class="row abilities">
+            <div class="ability-block">
+                <img src="/static/media/shield.png">
+                <h4>Двухфакторная защита
+                    ваших денег</h4>
+                <p>Сервис позволяет настроить подтверждение выплаты старшим бухгалтером/директором</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/bank2.png">
+                <h4>Работайте только
+                    с надежными банками</h4>
+                <p>Мы работаем только с банками, понимающими ваш бизнес. Все клиенты заводятся в банк со статусом VIP
+                </p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/rubuparrow.png">
+                <h4>Низкая комиссия за вывод средств, от 0,7%</h4>
+                <p>Фиксированные ставки комиссий, возможность регулировать ставки для водителей через личный кабинет
+                    сервиса</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/integration.png">
+                <h4>Предоставим API для
+                    интеграции с вашими
+                    учетными системами</h4>
+                <p>Вы уже работаете в своей учетной системе? Сервис интегрируется по открытому API с любой внешней
+                    учетной системой</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluent margin-top-s">
+    <div class="container business-3">
+        <div class="cbf-wide-description">
+            <h2>Доработаем сервис под 
+                ваши запросы</h2>
+            <p>Дорабатываем сервис под запросы рынка, 
+                свяжитесь с нами и сообщите, что необходимо вам 
+                для комфортной и эффективной работы</p>
+                <img src="/static/media/autodealer2.png">
+        </div>
+        {% include 'include//_callback_form.html' %}
+    </div>
+</div>
+
+<div class="business-4 margin-top-l">
+    {% include 'include//common_screens/_how_it_works.html' %}
+</div>
+<div class="business-5 margin-top-l">
+    {% include 'include//common_screens/_staff.html' %}
+</div>
+<div class="business-6 margin-top-l margin-bottom-l">
+    {% include 'include//common_screens/_contact_with_us.html' %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "new_base.html" %} {% load static %} {% block title %} Эквайринг 
+{% endblock %} {% block content %}
+
+<div class="container-fluent margin-top-s">
+  <div class="container features features-acquaring">
+    <h1>Гибкий автоматизированный интернет- эквайринг</h1>
+    <h1>
+      со сплитованием платежей и возможностью получать оплату через приложение
+    </h1>
+    <p class="regular">
+      Есть потребность принимать оплату за услуги или предоставляете физлицам в
+      аренду оборудование/транспорт и есть необходимость принимать за это
+      арендную плату - умеем просто автоматизировать пополнение вашего счета
+    </p>
+    <p class="regular">
+      Есть необходимость часть оплаты оставить физлицу (например работаете с
+      исполнителем на сделке, 50/50) - настройте в системе и мы разделим платеж,
+      часть зачислится исполнителю, часть поступит на ваш расчетный счет
+    </p>
+    <img src="/static/media/other.png" />
+  </div>
+</div>
+
+<div class="container">
+  <div class="content-header"><h2>Как работает сервис</h2></div>
+  <h3 class="text-center">
+    Предоставляем несколько возможных сценариев приема оплаты. Полностью или
+    частично оплата будет зачислена организации. Или же полностью зачислена
+    исполнителю. Выбирайте сценарий под вашу бизнес-модель и потребности.
+  </h3>
+  <div class="scheme-image">
+    <img src="/static/media/STO_scheme.jpeg" />
+  </div>
+</div>
+
+<div id="form-bottom" class="container-fluent margin-bottom-l">
+  <div class="container business-3">
+    {% include 'include//_callback_form.html' %}
+  </div>
+</div>
+
+{% endblock %}

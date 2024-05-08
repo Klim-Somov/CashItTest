@@ -1,0 +1,91 @@
+<div class="container-fluent screen-3">
+    <div class="container content-3">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <h2>Каким бизнесам и отраслям подходит сервис</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center content-3-2">
+            <div class="col">
+                <div class="row justify-content-center gx-0 content-3-2-row">
+                    <a href="{% url 'taxi' %}" class="col content-3-2-block">
+                        <div class="block-3-2-head">
+                            <h4>Рынок такси</h4>
+                        </div>
+                        <div>Коробочное решение для выплат водителям такси. Интеграция с основными службами заказа
+                            такси.</div>
+                        <div class="block-3-2-foot">Подробнее</div>
+                    </a>
+
+                    <a href="{% url 'delivery' %}" class="col content-3-2-block">
+                        <div class="block-3-2-head">
+                            <h4>Курьерские службы</h4>
+                        </div>
+                        <div>Работаете с Delivery Club, Самокат и другими курьерскими службами, или вы сами организовали
+                            компанию по доставке? Поможем автоматизировать выплаты вашим курьерам.</div>
+                        <div class="block-3-2-foot">Подробнее</div>
+                    </a>
+                    <a href="{% url 'freelance' %}" class="col content-3-2-block">
+                        <div class="block-3-2-head">
+                            <h4>Биржи фрилансеров</h4>
+                        </div>
+                        <div>Работаете с фрилансерами по всему миру? Поможем автоматизировать выплаты</div>
+                        <div class="block-3-2-foot">Подробнее</div>
+                    </a>
+                </div>
+                <div class="row justify-content-center gx-0 content-3-2-row">
+                    <a href="{% url 'recycling' %}" class="col content-3-2-block">
+                        <div class="block-3-2-head">
+                            <h4>Приемщики вторсырья</h4>
+                        </div>
+                        <div>Платите физическим лицам в два клика просто и легально</div>
+                        <div class="block-3-2-foot">Подробнее</div>
+                    </a>
+                    <a href="{% url 'autodealers' %}" class="col content-3-2-block">
+                        <div class="block-3-2-head">
+                            <h4>Автосалоны</h4>
+                        </div>
+                        <div>Покупаете автомобили у физических лиц? Сделаем процесс выплаты быстрым и комфортным.</div>
+                        <div class="block-3-2-foot">Подробнее</div>
+                    </a>
+                    <a href="{% url 'realtors' %}" class="col content-3-2-block">
+                        <div class="block-3-2-head">
+                            <h4>Риелторы, застройщики и т.д.</h4>
+                        </div>
+                        <div>Регулярно выплачиваете риелторам? Платите легально и просто.</div>
+                        <div class="block-3-2-foot">Подробнее</div>
+                    </a>
+                    <a href="{% url 'others' %}" class="col content-3-2-block">
+                        <div class="block-3-2-head">
+                            <h4>И многие другие</h4>
+                        </div>
+                        <div>Расскажите нам про свой бизнес, и мы предоставим вам решение.</div>
+                        <div class="block-3-2-foot">Подробнее</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center content-3-3" id="answer-request">
+            <div class="col-auto">
+                <div class="row justify-content-center content-3-3-head">
+                        <h3>Есть вопросы? С радостью ответим!</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto any-questions">
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form }}
+                            <input type="hidden" name="button" value="Получить консультацию">
+                            <input type="submit" class="medium-btn" value="Получить консультацию">
+                        </form>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto policy-warning">
+                        <p>Нажимая, вы принимаете <a href="/policy" target="_blank">условия обработки персональных данных</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

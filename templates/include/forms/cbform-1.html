@@ -1,0 +1,15 @@
+<div class="form-common black-shadow cbf-1">
+    <h4>Оставьте ваши данные и получите консультацию</h4>
+    <form method="post">
+        {{ form }}
+        <input type="submit" class="medium-btn" value="Получить консультацию">
+        {% csrf_token %}
+        <input type="hidden" name="button" value="Получить консультацию">
+    </form>
+    <p class="margin-top-xxxs">Нажимая, вы принимаете <a href="/policy" target="_blank">условия обработки персональных данных</a></p>
+    <p class="bold margin-top-xxs">Напишите или позвоните нам прямо сейчас</p>
+    <div class="row contact-info-pannel margin-top-xxxs">
+        <div class="col"><img src="/static/media/phone2.png"><span>8 800 500 9036</span></div>
+        <div class="col"><img src="/static/media/mail.png"><span>info@cash-it.ru</span></div>
+    </div>
+</div>

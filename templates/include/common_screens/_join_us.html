@@ -1,0 +1,44 @@
+<div class="container join-us">
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <h2>Нас выбирают</h2>
+    </div>
+  </div>
+  <div id="form-bottom" class="row counters">
+    <div class="col info">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p class="medium-p">компаний</p>
+          <p class="large-p">>1000</p>
+        </div>
+      </div>
+    </div>
+    <div class="col info">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p class="medium-p">исполнителей</p>
+          <p class="large-p">>1 000 000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center wide-form">
+    <div class="col-auto box">
+      <h3>Все процессы автоматизированы. Умеем интегрироваться с различными системами и имеем свой понятный внешний API.</h3>
+      <p>Знаем и понимаем бизнес и его запросы.
+        Если вы не нашли функций, которые необходимы вам – напишите, скорее всего у нас есть этот функционал, просто мы не стали утяжелять сайт.
+        </p>
+      <form method="post">
+        {% csrf_token %} {{ form }}
+        <input type="hidden" name="button" value="Подключиться внизу" />
+        <input type="submit" class="medium-btn" value="Получить консультацию" />
+      </form>
+      <p>
+        Нажимая, вы принимаете
+        <a href="/policy" target="_blank"
+          >условия обработки персональных данных</a
+        >
+      </p>
+    </div>
+  </div>
+</div>

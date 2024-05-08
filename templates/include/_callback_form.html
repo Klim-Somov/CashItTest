@@ -1,0 +1,12 @@
+<div class="cbf cbf-wide black-shadow" id="answer-request">
+    <h3>Оставьте ваши данные и получите консультацию</h3>
+    <p>Менеджер свяжется с вами в ближайшее время</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="hidden" name="button" value="Получить консультацию">
+        <input type="submit" class="medium-btn" value="Получить консультацию">
+    </form>
+    <p>Нажимая, вы принимаете <a href="/policy" target="_blank">условия обработки персональных
+            данных</a></p>
+</div>

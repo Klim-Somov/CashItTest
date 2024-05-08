@@ -1,0 +1,92 @@
+{% extends "new_base.html" %} {% load static %} {% block title %} Абсолютно
+любой бизнес {% endblock %} {% block content %}
+
+<div class="container-fluent margin-top-s">
+  <div class="container business-1">
+    <h1>Абсолютно</h1>
+    <h1>любой бизнес</h1>
+    <p class="regular">
+      Предоставьте сотрудникам возможность получать заработанное 24/7 - 365 дней
+      в году и вы удивитесь, как повысится востребованность вашей компании на
+      рынке.
+    </p>
+    <a class="large-btn" href="#answer-request"
+      >Узнать о возможностях сервиса</a
+    >
+    <img src="/static/media/other.png" />
+  </div>
+</div>
+
+<div class="container-fluent padding-top-s">
+  <div class="container business-2">
+    <h2>Какие возможности дает сервис</h2>
+    <div class="row abilities">
+      <div class="ability-block">
+        <img src="/static/media/billing.png" />
+        <h4>Автоматический расчет заработанной платы</h4>
+        <p>
+          Система произведет рассчет по вашим критериям и начислит денежные
+          средства. Ежедневно или по ващим правилам.
+        </p>
+      </div>
+      <div class="ability-block">
+        <img src="/static/media/cards.png" />
+        <h4>Индивидуальные условия расчета сотрудникам</h4>
+        <p>
+          Учитываются все возможные рабочие графики: окладной доход/сменный
+          график/вахтовый метод или частичная занятость и тд.
+        </p>
+      </div>
+      <div class="ability-block">
+        <img src="/static/media/bank2.png" />
+        <h4>Облегчение в работе бухгалтеров и кадровых сотрудников</h4>
+        <p>
+          Система начисляет зарплату автоматически. Данные для уплаты налогов
+          формируются в два клика.
+        </p>
+      </div>
+      <div class="ability-block">
+        <img src="/static/media/rubuparrow.png" />
+        <h4>Повышение привлекательности вашей компании на рынке</h4>
+        <p>
+          Более 95% сотрудников положительно относятся к такой функции.
+          Соискатели выбирают компании с возможностью получать зарплату
+          моментально 24/7
+        </p>
+      </div>
+      <div class="ability-block">
+        <img src="/static/media/integration.png" />
+        <h4>Интеграция с вашими учетными системами</h4>
+        <p>
+          Если вы уже работаете в своей учетной системе, то Сервис легко
+          интегрируется по открытому API с любой внешней учетной системой.
+        </p>
+      </div>
+      <div class="ability-block">
+        <img src="/static/media/application.png" />
+        <h4>Гибкие индивидуальные настройки пользователей</h4>
+        <p>
+          Возможно адресно ограничивать доступ в приложение для пользователей и
+          настраивать в Сервисе роли для ваших помощников
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="container-fluent padding-top-xs padding-bottom-s"
+  id="answer-request"
+>
+  {% include 'include//common_screens/_join_us.html' %}
+</div>
+
+<div class="business-4">
+  {% include 'include//common_screens/_how_it_works-any-business.html' %}
+</div>
+
+<div class="business-6 margin-top-l margin-bottom-l">
+  {% include 'include//common_screens/_contact_with_us.html' %}
+</div>
+
+{% endblock %}

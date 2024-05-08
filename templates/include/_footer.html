@@ -1,0 +1,30 @@
+{% load settings_tags %}
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-3 col-6">
+                <div class="f-one">
+                    <a href="tel:{% settings_value 'PHONE' %}">{% settings_value 'PHONE' %}</a>
+                    <a href="mailto:{% settings_value 'EMAIL' %}">{% settings_value 'EMAIL' %}</a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-6 mob-none">
+                <div class="f-two">
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="{% url 'business' %}" class="footer-menu-link">Бизнесу</a></li>
+                        <li class="footer-menu-item"><a href="{% url 'self' %}" class="footer-menu-link">Самозанятым</a></li>
+                        <li class="footer-menu-item"><a href="{% url 'service' %}" class="footer-menu-link">О сервисе</a></li>
+                        <li class="footer-menu-item"><a href="{% url 'blog' %}" class="footer-menu-link">Блог</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="f-three">
+                    <a href="{% url 'index' %}">© 2021 Cash&IT</a>
+                    <a class="con" href="{% url 'policy' %}">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

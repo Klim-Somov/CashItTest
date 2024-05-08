@@ -1,0 +1,83 @@
+{% extends "new_base.html" %}
+{% load static %}
+
+{% block title %}
+Другие рынки
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluent margin-top-s">
+    <div class="container business-1">
+        <h1>Другие рынки</h1>
+        <p class="regular">
+            Сервис активно дорабатывается под различные рынки.
+            Просто свяжитесь с нами и сообщите, что необходимо
+            именно вашей компании и отрасли — мы предложим
+            вам решение для комфортной и эффективной работы
+            вашего бизнеса.
+        </p>
+        <a class="large-btn" href="#answer-request">Узнать о возможностях сервиса</a>
+        <img src="/static/media/other.png">
+    </div>
+</div>
+
+<div class="container-fluent padding-top-s">
+    <div class="container business-2">
+        <h2>Какие возможности дает сервис</h2>
+        <div class="row abilities">
+            <div class="ability-block">
+                <img src="/static/media/cards.png">
+                <h4>Выплаты 24/7 
+                    c индивидуальными 
+                    и массовыми настройками</h4>
+                <p>Через ваш личный кабинет в сервисе возможно произвести массовые и индивидуальные настройки для выплат вашим исполнителям. </p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/rubuparrow.png">
+                <h4>Низкая комиссия за вывод средств, от 0,7%</h4>
+                <p>Фиксированные ставки комиссий, возможность регулировать ставки для водителей через личный кабинет
+                    сервиса</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/bank2.png">
+                <h4>Проверенные 
+                    банки–партнеры</h4>
+                <p>Мы работаем только с банками, понимающими ваш бизнес. Все клиенты заводятся в банк со статусом VIP</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/agreement.png">
+                <h4>Дистанционное подписание договора с физлицом</h4>
+                <p>Сервис позволят дистанционно подписывать оферты прямо в приложении и выгружать статусы и даты подписания.</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/integration.png">
+                <h4>Безопасная и простая 
+                    интеграция</h4>
+                <p>Есть своя автоматизация? Сервис интегрируется по открытому API с любой внешней учетной системой</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/support.png">
+                <h4>Служба поддержки</h4>
+                <p>Экспертная служба поддержки. Выделенный аккаунт менеджер для каждого клиента</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluent padding-top-xs padding-bottom-s" id="answer-request">
+    {% include 'include//common_screens/_join_us.html' %}
+</div>
+
+<div class="business-4">
+    {% include 'include//common_screens/_how_it_works.html' %}
+</div>
+<div class="business-5 margin-top-l">
+    {% include 'include//common_screens/_staff.html' %}
+</div>
+<div class="business-6 margin-top-l margin-bottom-l">
+    {% include 'include//common_screens/_contact_with_us.html' %}
+</div>
+
+{% endblock %}

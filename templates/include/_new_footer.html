@@ -1,0 +1,177 @@
+{% load settings_tags %}
+
+<footer>
+  <div class="container">
+    <div class="row footer-content">
+      <div class="col-auto footer-content-1">
+        <div class="row">
+          <div class="col footer-menu-item">
+            <img src="/static/media/logo.png" alt="" />
+          </div>
+          <div class="col footer-menu-item">
+            <span>© 2024 Cash&IT</span>
+          </div>
+          <div class="col footer-menu-item">
+            <a href="{% url 'policy' %}">Пользовательское соглашение</a>
+          </div>
+        </div>
+        <div class="row">
+          <div style="margin-bottom: 60px" class="footer_right_extra">
+            <!--  -->
+            <a
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=ru.cashit"
+              class="extra_item">
+              <div class="extra_img">
+                <img src="/static/media/google_play.svg" alt="" />
+                <div class="active_img">
+                  <img src="/static/media/active_google.svg" alt="" />
+                </div>
+              </div>
+              <p class="extra_title">Google play</p>
+            </a>
+            <!--  -->
+            <a
+              target="_blank"
+              href="https://apps.apple.com/ru/app/cash-it/id1571869091"
+              class="extra_item">
+              <div class="extra_img">
+                <img src="/static/media/app_store.svg" alt="" />
+                <div class="active_img">
+                  <img src="/static/media/active_store.svg" alt="" />
+                </div>
+              </div>
+              <p class="extra_title">App store</p>
+            </a>
+            <!--  -->
+            <a
+              target="_blank"
+              href="https://appgallery.huawei.com/#/app/C108605507"
+              class="extra_item">
+              <div class="extra_img">
+                <img src="/static/media/app_gallery.svg" alt="" />
+                <div class="active_img">
+                  <img src="/static/media/active_app.svg" alt="" />
+                </div>
+              </div>
+              <p class="extra_title">App Gallery</p>
+            </a>
+            <!--  -->
+            <a
+              target="_blank"
+              href="https://apps.rustore.ru/app/ru.cashit"
+              class="extra_item">
+              <div class="extra_img">
+                <img src="/static/media/ru_store_main.svg" alt="" />
+                <div class="active_img">
+                  <img src="/static/media/ru_store_hover.svg" alt="" />
+                </div>
+              </div>
+              <p class="extra_title">Ru Store</p>
+            </a>
+          </div>
+
+          {% comment %}
+          <div class="col markets-links">
+            <a
+              class="appstore-btn"
+              href="https://apps.apple.com/ru/app/cash-it/id1571869091"></a>
+            <a
+              class="playmarket-btn"
+              href="https://play.google.com/store/apps/details?id=ru.cashit"></a>
+            <a
+              class="rustore-btn"
+              href="https://apps.rustore.ru/app/ru.cashit"></a>
+            <a
+              class="huawey-btn"
+              href="https://appgallery.huawei.com/#/app/C108605507"></a>
+          </div>
+          {% endcomment %}
+        </div>
+      </div>
+
+      <div class="col footer-content-2">
+        <div class="row">
+          <div class="col-auto footer-menu">
+            <ul>
+              <li class="footer-menu-imp-item"><span>Бизнесу</span></li>
+              <li class="footer-menu-item">
+                <a href="{% url 'any-business' %}">Любой бизнес</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="{% url 'taxi' %}">Рынок такси</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="{% url 'delivery' %}">Курьерские службы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="{% url 'freelance' %}">Биржи фрилансеров</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="{% url 'recycling' %}">Приём вторсырья</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="{% url 'autodealers' %}">Автосалоны</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="{% url 'realtors' %}">Риелторы, застройщики и т.д.</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="{% url 'others' %}">Другое</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-auto footer-menu">
+            {% comment %}
+            <div class="col-auto footer-menu">
+              <ul>
+                <!-- <li class="footer-menu-imp-item"><a href="#">Интеграция</a></li> -->
+                <li class="footer-menu-imp-item"><span>Информация</span></li>
+                <!-- <li class="footer-menu-item"><a href="#">Статьи</a></li> -->
+                <li class="footer-menu-item">
+                  <a href="{% url 'service' %}">О компании</a>
+                </li>
+              </ul>
+            </div>
+            {% endcomment %}
+            <div class="col-auto footer-menu">
+              <ul>
+                <li class="footer-menu-imp-item"><span>Контакты</span></li>
+                <li class="footer-menu-item">
+                  <a href="tel:{% settings_value 'PHONE' %}"
+                    >{% settings_value 'PHONE' %}</a
+                  >
+                </li>
+                <li class="footer-menu-item">
+                  <a href="mailto:{% settings_value 'EMAIL' %}"
+                    >{% settings_value 'EMAIL' %}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activities row">
+        <h4 style="margin-bottom: 20px">Информация о видах деятельности</h4>
+        <ul style="list-style: none">
+          <li>
+            ООО "ЛАБОРАТОРИЯ ОНЛАЙН СЕРВИСОВ" ИНН 6686131140, ОГРН 1216600008745
+          </li>
+          <li>
+            Основной ОКВЭД: 62.01 Разработка компьютерного программного
+            обеспечения
+          </li>
+          <li>Номер в реестре аккредитованных организаций: 21382</li>
+          <li>
+            Номер решения о государственной аккредитации:
+            АО-20220314-3814395676-3
+          </li>
+          <li>Дата решения о государственной аккредитации: 15.03.2022</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

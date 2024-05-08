@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Блог
+{% endblock %}
+
+{% block content %}
+    <section class="blog-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="name">
+                        Блог
+                    </h1>
+                </div>
+                {% for article in articles|slice:':9' %}
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="blog-block blog-{{ article.color }}">
+                            {% if article.color == 'white' %}
+                                <img src="/static/media/footer-back.png" alt="">
+                            {% endif %}
+                            <div class="blog-block-inner">
+                                <p class="blog-block-data">
+                                    {{ article.created_at|date:"d E Y г." }}
+                                </p>
+                                <p class="blog-block-text-{{ article.color }}">
+                                    <a href="{{ article.get_absolute_url }}">{{ article.title|striptags|truncatewords_html:8}}</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

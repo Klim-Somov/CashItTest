@@ -1,0 +1,29 @@
+{% extends "new_base.html" %} {% load static %} {% block title %} Чаевые {% endblock %} {% block content %}
+
+<div class="container-fluent margin-top-s">
+  <div class="container features ">
+    <h1>Удобные чаевые для сотрудника или компании с понятными настройками и выгодными условиями</h1>
+
+    <p class="regular">
+      Увеличивайте ваш доход и/или доход ваших исполнителей
+    </p>
+    <img src="/static/media/other.png" />
+  </div>
+</div>
+
+<div class="margin-bottom-l">
+  {% include 'include//common_screens/_how_it_works-tips.html' %}
+</div>
+<div class="container margin-top-s">
+  <h3 class="margin-bottom-l text-center">
+    Денежные средства зачисляются на расчетный счет организации. Если вы в настройках указали, какой процент от суммы должен зачислиться сотруднику - у него будет возможность вывести эти деньги моментальной выплатой.
+  </h3>
+</div>
+
+<div id="form-bottom" class="container-fluent margin-bottom-l">
+  <div class="container business-3">
+    {% include 'include//_callback_form.html' %}
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+/*просто не придумал как это унифицировать, 
+специфичные стили,
+подгонял вид*/
+
+@media (min-width: 1164px) and (max-width: 1343px) {
+    .taxi-1 .slim {
+        max-width: 45%;
+    }
+    
+    .realtors-1 .regular {
+        max-width: 52%;
+    }   
+}
+
+@media (max-width: 1163px) {
+    .realtors-1 .slim {
+        max-width: 56%;
+    }  
+}
+
+@media (max-width:719px) {
+    .taxi-1 .slim,
+    .realtors-1 .slim,
+    .realtors-1 .regular {
+        max-width: 100%;
+    }
+}

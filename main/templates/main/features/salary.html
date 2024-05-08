@@ -1,0 +1,100 @@
+{% extends "new_base.html" %} {% load static %} {% block title %} Работа с
+сотрудниками {% endblock %} {% block content %}
+
+<div class="container-fluent margin-top-s">
+  <div class="container features">
+    <h1>Работа с сотрудниками</h1>
+    <p class="regular">
+      Мы знаем, что сейчас на рынке труда происходят изменения. В приоритете у
+      сотрудников становятся компании, предоставляющие удобство и свободу в
+      получении заработанных денежных средств. Поэтому мы предоставляем вам
+      возможности, благодаря которым ваша компания станет еще привлекательнее
+      для работников.
+    </p>
+    <img src="/static/media/other.png" />
+    {% comment %}
+    <a class="medium-btn margin-top-s" href="#form-bottom">Узнать подробнее</a>
+    {% endcomment %}
+  </div>
+
+  <div class="container features">
+    <h1>Табель или ЗП каждый день</h1>
+    <p class="regular">
+      HR модуль, разработанный для клиентов, которые хотят автоматизировать
+      выплату ЗП сотрудников каждый день, или по своему графику
+    </p>
+    <img src="/static/media/other.png" />
+  </div>
+
+  <div class="container">
+    <div class="salary-checked-block row content-body justify-content-center">
+      <p class="checked-p checked-p-n">
+        Вы настраиваете размер заработной платы, график работы и прочие условия
+      </p>
+      <p class="checked-p checked-p-n">
+        Система автоматически зачислит денежные средства на баланс сотрудника
+      </p>
+      <p class="checked-p checked-p-n">
+        Сотрудник в любое время имеет возможность получить заработанные деньги
+        моментально
+      </p>
+      <p class="checked-p checked-p-n">
+        В дополнение - в установленные дни может приходить реестр для
+        обязательной выплаты (например день аванса или заработной платы). В нем
+        будут учтены суммы, за минусом уже полученных средств моментальной
+        выплатой
+      </p>
+    </div>
+    <div class="btn-sm-text-center">
+      <a class="medium-btn margin-top-s margin-bottom-s" href="#form-bottom"
+        >Узнать подробнее</a
+      >
+    </div>
+  </div>
+
+  <div class="container features">
+    <h1>Реферальная программа</h1>
+    <p class="regular">
+      Используйте реферальные программы для привлечения новых работников.
+    </p>
+    <img src="/static/media/other.png" />
+    {% comment %}
+    <a class="medium-btn margin-top-s" href="#form-bottom">Узнать подробнее</a>
+    {% endcomment %}
+  </div>
+  <div class="container margin-top-s">
+    <h3 class="margin-bottom-l text-center">
+      Благодаря реферальным программам проще и дешевле вовлекать новую
+      аудиторию. Статистика показывает, что рекомендациям знакомых доверяют
+      больше, чем рекламе.
+    </h3>
+    <div class="salary-checked-block row content-body justify-content-center">
+      <p class="checked-p checked-p-n">
+        Вы настраиваете условия зачисления бонуса - фиксированно или процент с
+        заказов
+      </p>
+      <p class="checked-p checked-p-n">
+        После регистрации в сервисе, устанавливаете реферальный код сотрудника,
+        который пригласил
+      </p>
+      <p class="checked-p checked-p-n">
+        Система автоматически зачисляет бонус исходя из установленных правил
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container margin-top-s">
+  <h3 class="margin-bottom-l text-center">
+    Таким образом ваши работники сами приводят вам новых, тем самым экономят ваш
+    рекламный HR бюджет.
+  </h3>
+</div>
+
+<div id="form-bottom" class="container-fluent margin-bottom-l">
+  <div class="container business-3">
+    {% include 'include//_callback_form.html' %}
+  </div>
+</div>
+
+{% endblock %}

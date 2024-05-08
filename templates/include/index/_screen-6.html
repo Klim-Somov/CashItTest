@@ -1,0 +1,40 @@
+<div class="container-fluent screen-6" id="form-bottom">
+    <div class="container content-6">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <h2>С нами уже</h2>
+            </div>
+        </div>
+        <div class="row content-6-1">
+            <div class="col info">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p class="medium-p">клиентов</p>
+                        <p class="large-p">>700</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col info">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p class="medium-p">пользователей</p>
+                        <p class="large-p">>400 000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center content-6-2">
+            <div class="col-auto box">
+                <h3>Оставьте ваши данные, чтобы подключиться к нам</h3>
+                <p>Менеджер свяжется с вами в ближайшее время</p>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <input type="hidden" name="button" value="Подключиться внизу">
+                    <input type="submit" class="medium-btn" value="Подключиться">
+                </form>
+                <p>Нажимая, вы принимаете <a href="/policy" target="_blank">условия обработки персональных данных</a></p>
+            </div>
+        </div>
+    </div>
+</div>

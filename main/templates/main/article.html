@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Блог
+{% endblock %}
+
+{% block content %}
+    <section class="article-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title">
+                        {{ object.title }}
+                    </h1>
+                </div>
+                <div class="col-12">
+                    <div class="article-block">
+                        <div class="article-block-inner">
+                            <p class="article-block-data">
+                                {{ object.created_at|date:"d E Y г." }}
+                            </p>
+                            <p class="article-block-text">
+                                {{ object.content|safe }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

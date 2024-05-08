@@ -1,0 +1,21 @@
+{% extends "new_base.html" %}
+{% load static %}
+
+{% block title %}
+Cash&IT
+{% endblock %}
+
+
+{% block content %}
+
+{% include 'include//index/_screen-1.html' %}
+{% include 'include//index/_screen-feat.html' %}
+{% include 'include//index/_screen-3.html' %}
+{% include 'include//index/_screen-2.html' %}
+{% comment %} {% include 'include//index/_screen-4.html' %} {% endcomment %}
+{% comment %} {% include 'include//index/_screen-5.html' %} {% endcomment %}
+<div class="container-fluent padding-top-m padding-bottom-m">
+    {% include 'include//common_screens/_join_us.html' %}
+</div>
+
+{% endblock %}

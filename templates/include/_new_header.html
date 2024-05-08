@@ -1,0 +1,70 @@
+{% load settings_tags %} {% load activeurl %}
+
+<header>
+  <nav class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex gap-3">
+        <div class="col-auto">
+          <a href="/">
+            <img class="logo" src="/static/media/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="col-auto menu-col flex-fill">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <img src="/static/media/sandwich.png" />
+          </label>
+          {% comment %}
+          <ul class="menu">
+            <li>
+              <span
+                >Бизнесу<img src="/static/media/ddarrow.png" class="ddarrow"
+              /></span>
+              <ul>
+                <li><a href="{% url 'any-business' %}">Любой бизнес</a></li>
+                <li><a href="{% url 'taxi' %}">Рынок такси</a></li>
+                <li><a href="{% url 'delivery' %}">Курьерские службы</a></li>
+                <li><a href="{% url 'freelance' %}">Биржи фрилансеров</a></li>
+                <li><a href="{% url 'recycling' %}">Приём вторсырья</a></li>
+                <li><a href="{% url 'autodealers' %}">Автосалоны</a></li>
+                <li>
+                  <a href="{% url 'realtors' %}"
+                    >Риелторы, застройщики и т.д.</a
+                  >
+                </li>
+                <li><a href="{% url 'others' %}">Другое</a></li>
+              </ul>
+            </li>
+          </ul>
+          {% endcomment %}
+          <ul class="menu">
+            <li>
+              <span
+                >Возможности<img
+                  src="/static/media/ddarrow.png"
+                  class="ddarrow"
+              /></span>
+              <ul>
+                <li>
+                  <a href="{% url 'payment' %}">Моментальные выплаты</a>
+                </li>
+                <li><a href="{% url 'acquiring' %}">Эквайринг</a></li>
+                <li><a href="{% url 'salary' %}">ЗП каждый день</a></li>
+                <li><a href="{% url 'donate' %}">Донатный портал</a></li>
+                <li><a href="{% url 'tips' %}">Чаевые</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-inscription">
+        Интеллектуальная система платежей для бизнеса
+      </div>
+      <div class="col-auto">
+        <a class="request-btn" href="#form-bottom" id="header-req-btn"
+          >Получить консультацию</a
+        >
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,32 @@
+{% extends "new_base.html" %} {% load static %} {% block title %} Донатный портал 
+{% endblock %} {% block content %}
+
+<div class="container-fluent margin-top-s">
+  <div class="container features features-acquaring">
+    <h1>Умный сервис для сбора донатов</h1>
+
+    <p class="regular">
+      Собираете донаты через блогеров и лидеров мнений и есть необходимость оплачивать их услуги?
+    </p>
+    <p class="regular">
+      Блогер прорекламирует уникальную платежную форму, а сервис автоматически разделит платеж. В момент платежа (интернет-эквайринг) Cash&IT сплитует платеж исходя из настроек Клиента, часть платежа будет доступна блогеру для вывода.
+    </p>
+    <img src="/static/media/other.png" />
+  </div>
+</div>
+
+<div class="container">
+  <div class="content-header"><h2>Как работает сервис</h2></div>
+
+  <div class="scheme-image">
+    <img src="/static/media/donate_scheme1.jpeg" />
+  </div>
+</div>
+
+<div id="form-bottom" class="container-fluent margin-bottom-l">
+  <div class="container business-3">
+    {% include 'include//_callback_form.html' %}
+  </div>
+</div>
+
+{% endblock %}

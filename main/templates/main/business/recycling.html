@@ -1,0 +1,83 @@
+{% extends "new_base.html" %}
+{% load static %}
+
+{% block title %}
+Приём вторсырья
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluent margin-top-s">
+    <div class="container business-1">
+        <h1>Приём вторсырья</h1>
+        <p class="slim">
+            Платите физическим лицам в два клика просто и легально
+        </p>
+        <a class="large-btn" href="#answer-request">Узнать о возможностях сервиса</a>
+        <img src="/static/media/recycler.png">
+    </div>
+</div>
+
+<div class="container-fluent padding-top-s">
+    <div class="container business-2">
+        <h2>Какие возможности дает сервис</h2>
+        <div class="row abilities">
+            <div class="ability-block">
+                <img src="/static/media/application.png">
+                <h4>Предоставим отчеты 
+                    для бухгалтерии</h4>
+                <p>Автоматизирует расчеты и предоставляем документы для налоговой службы и бухгалтерии. Отчеты, акты, чеки и прочее - формируются автоматически в системе.</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/badge.png">
+                <h4>При необходимости проведем 
+                    идентификацию физлица</h4>
+                <p>Если это необходимо вашей компании мы через сервис и приложение можем проводить идентификацию физического лица</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/rubuparrow.png">
+                <h4>Низкая комиссия за вывод средств, от 0,7%</h4>
+                <p>Фиксированные ставки комиссий, возможность регулировать ставки для водителей через личный кабинет
+                    сервиса</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/integration.png">
+                <h4>Интеграция с вашими
+                    учетными системами</h4>
+                <p>Вы уже работаете в своей учетной системе? Сервис интегрируется по открытому API с любой внешней
+                    учетной системой</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/cards.png">
+                <h4>Выплачивайте напрямую 
+                    с расчетного  или транзитного 
+                    счета в два клика</h4>
+                <p>Сервис позволяет организовать выплаты денежных средств полностью с соблюдением действующего законодательства РФ.</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/bank2.png">
+                <h4>Никаких блокировок счетов</h4>
+                <p>ОМы работаем только с банками, понимающими ваш бизнес. Все клиенты заводятся в банк со статусом VIP</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluent margin-top-m">
+    <div class="container business-3">
+        {% include 'include//_callback_form.html' %}
+    </div>
+</div>
+
+<div class="business-4 margin-top-l">
+    {% include 'include//common_screens/_how_it_works.html' %}
+</div>
+<div class="business-5 margin-top-l">
+    {% include 'include//common_screens/_staff.html' %}
+</div>
+<div class="business-6 margin-top-l margin-bottom-l">
+    {% include 'include//common_screens/_contact_with_us.html' %}
+</div>
+
+{% endblock %}

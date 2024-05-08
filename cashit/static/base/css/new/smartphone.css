@@ -1,0 +1,679 @@
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+nav .logo {
+  max-height: 31px;
+  margin-left: 59px;
+}
+
+.salary-checked-block {
+  margin-top: 0px;
+}
+
+.btn-sm-text-center {
+  text-align: center;
+}
+
+.menu-btn {
+  left: 16px;
+}
+
+.menu-btn > img {
+  max-height: 19px;
+}
+
+#header-req-btn {
+  display: none;
+}
+
+.container {
+  max-width: 297px;
+}
+
+.tab + .tab {
+  margin-top: 12px;
+}
+
+.tab-title::before {
+  font-size: 30px;
+  margin-right: 11px;
+  height: 2em;
+}
+
+.tab-title {
+  padding: 21px 16px;
+  font-size: 22px;
+}
+
+.tab-content {
+  padding: 29px 34px;
+  font-size: 18px;
+}
+
+.cbf-1 {
+  padding: 30px 25px;
+}
+
+.cbf-1 > p + p {
+  font-size: 18px;
+}
+
+.cbf-2 {
+  padding: 44px 25px;
+}
+
+.cbf-2 p {
+  font-size: 16px;
+}
+
+.cbf-2 h4 {
+  font-size: 18px;
+  max-width: unset;
+  margin-left: unset;
+  margin-right: unset;
+}
+
+.contact-info-pannel {
+  flex-direction: column;
+}
+
+.contact-info-pannel > .col {
+  padding-top: 18px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.contact-info-pannel > .col + .col {
+  border-left: unset;
+  padding-top: 5px;
+  padding-bottom: 18px;
+}
+
+.cbf-wide-description {
+  text-align: center;
+  height: fit-content;
+  padding: 52px 33px;
+}
+
+.cbf-wide-description h2 {
+  padding-top: unset;
+}
+
+.cbf-wide-description p {
+  font-size: 18px;
+  margin-top: 27px;
+}
+
+.cbf-wide-description h2,
+.cbf-wide-description p {
+  max-width: unset;
+  margin-left: unset;
+}
+
+.cbf-wide-description img {
+  position: unset;
+  max-height: unset;
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.cbf-wide-description + .cbf-wide {
+  margin-top: unset;
+}
+
+.screen-1 .content-1 {
+  padding-top: 75px;
+  padding-bottom: 70px;
+}
+
+.screen-1 .content-1-1 p,
+.screen-1 .content-1-2-text {
+  font-size: 16px;
+}
+
+.screen-1 .content-1-1-row {
+  padding-bottom: 31px;
+}
+
+.screen-1 .content-1-1-row > .row {
+  padding: 0;
+}
+
+.screen-1 .content-1-1-row > .pros-row + .pros-row {
+  margin-top: 25px;
+}
+
+.screen-1 .content-1-1-row > span {
+  font-size: 18px;
+}
+
+.screen-1 .content-1-1-pros {
+  flex-direction: column;
+  padding: 0;
+}
+
+.screen-1 .content-1-1-pros > .col {
+  max-width: 140px;
+  text-align: center;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.screen-1 .content-1-1-pros p {
+  font-size: 14px;
+}
+
+.large-btn {
+  font-size: 18px;
+  padding: 20px 50px;
+}
+
+.screen-1 .content-1-2 {
+  flex-direction: column;
+}
+
+.screen-1 .content-1-2-block {
+  height: 100%;
+  padding: 20px 0;
+}
+
+.screen-1 .content-1-2-block + .content-1-2-block {
+  border-top: none;
+  border-left: 1px solid #7d7d7d;
+}
+
+.screen-2 .content-2 {
+  padding-bottom: 59px;
+}
+
+.screen-2 .content-2-2 > .col-auto {
+  max-width: 46%;
+}
+
+.screen-2 .content-2-2 > .col-auto > img {
+  max-width: 100%;
+}
+
+.screen-3 .content-3 {
+  padding: 78px 0;
+}
+
+.screen-3 .content-3-2 .block-3-2-foot {
+  margin-top: 17px;
+}
+
+.screen-3 .content-3-3 .any-questions {
+  width: 100%;
+  padding: 0;
+}
+
+.screen-3 .any-questions .medium-input {
+  font-size: 18px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.screen-3 .any-questions .medium-btn {
+  padding: 17px 19px;
+}
+
+.policy-warning {
+  font-size: 16px;
+  max-width: 100%;
+  padding: 0;
+}
+
+.screen-4 .content-4-1 {
+  padding-top: 15px;
+}
+
+.screen-4 .content-4-1-block {
+  min-width: 100%;
+  padding: 22px 6px;
+}
+
+.screen-4 .content-4-1-block-head {
+  padding-top: 20px;
+}
+
+.screen-4 .content-4-1-block-text {
+  font-size: 16px;
+  padding-top: 17px;
+}
+
+.screen-4 .content-4-2 {
+  padding-top: 58px;
+}
+
+.screen-4 .content-4-2-1 > img {
+  max-width: 100%;
+}
+
+.screen-4 .content-4-2-2 {
+  padding-top: 47px;
+}
+
+.screen-4 .content-4-2-2-block-1 {
+  font-size: 18px;
+}
+
+.screen-4 .content-4-2-2-block-2 {
+  font-size: 16px;
+}
+
+.screen-4 .content-4-2-2 .store-buttons {
+  gap: 27px;
+}
+
+.screen-4 .content-4-2-2 .store-button {
+  padding: 0;
+}
+
+.screen-4 .content-4-2-2 .store-button + .store-button {
+  padding-left: unset;
+}
+
+.screen-4 .content-4-2-2 .store-button img {
+}
+
+.screen-5 {
+  background-image: url('/static/media/bg5screen4.png');
+  background-size: cover;
+}
+
+.screen-5 .content-5 {
+  padding-top: 160px;
+  padding-bottom: 150px;
+}
+
+.screen-5 .content-5 > .row > .col {
+  padding: 0;
+}
+
+.screen-5 .content-5 .col h3 + h3 {
+  margin-top: 30px;
+}
+
+.screen-5 .content-5 .col-5 {
+  margin-top: 44px;
+  width: 100%;
+  padding: 0;
+}
+
+.screen-5 .form-common {
+  padding: 35px 25px;
+}
+
+.screen-5 .form-common .block-head p {
+  padding-top: 9px;
+}
+
+.screen-5 .form-common .block-body {
+  padding-top: 9px;
+}
+
+.screen-5 .form-common p {
+  font-size: 16px;
+}
+
+.screen-5 .form-common .medium-input {
+  font-size: 18px;
+  padding: 17px 24px;
+}
+
+.join-us {
+  margin: 0;
+  max-width: 100%;
+}
+
+.counters {
+  margin-top: 43px;
+  padding-top: 40px;
+  padding-bottom: 361px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.counters .col,
+.counters .col-auto {
+  padding: 0;
+}
+
+.wide-form .box {
+  max-width: 297px;
+  margin-top: -325px;
+  padding: 35px 26px;
+}
+
+.wide-form .box h3 {
+  font-size: 18px;
+}
+
+.wide-form .box p {
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.wide-form .box input {
+  font-size: 18px;
+}
+
+.wide-form .box .medium-input {
+  padding: 17px 21px;
+}
+
+.business-1 {
+  text-align: center;
+  padding-top: unset;
+  min-height: unset;
+  margin-bottom: unset;
+  padding-bottom: 125px;
+}
+
+.business-1 > p {
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+.business-1 > .large-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.business-1 > img {
+  position: unset;
+  height: 215px;
+  margin-top: 45px;
+}
+.content-head {
+  margin-bottom: 20px;
+}
+
+.features {
+  text-align: center;
+  padding-top: unset;
+  min-height: unset;
+  margin-bottom: unset;
+  padding-bottom: 60px;
+}
+.features-acquaring {
+  padding-bottom: 0;
+}
+
+.features > p {
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+.features > .large-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.features > img {
+  position: unset;
+  height: 215px;
+  margin-top: 45px;
+}
+
+.business-2 {
+  text-align: center;
+}
+
+.business-2 .abilities {
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 40px;
+}
+
+.business-2 .ability-block {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: unset;
+}
+
+.business-2 .ability-block + .ability-block {
+  margin-top: 35px;
+}
+
+.business-2 .ability-block > h4 {
+  margin-top: 23px;
+}
+
+.business-2 .ability-block > p {
+  font-size: 16px;
+  margin-top: 14px;
+}
+
+.business-3 .cbf-wide {
+  padding: 33px 26px;
+  max-width: 100%;
+}
+
+.business-3 .cbf-wide > h3 {
+  font-size: 18px;
+}
+
+.business-3 .cbf-wide > p,
+.business-3 .cbf-wide > span {
+  font-size: 16px;
+}
+
+.business-3 .cbf-wide > span {
+  line-height: 1;
+}
+
+.business-3 .cbf-wide > p {
+  margin-top: 11px;
+}
+
+.business-3 .cbf-wide > form {
+  margin-top: 25px;
+}
+
+.business-3 .cbf-wide .medium-input + .medium-input,
+.business-3 .cbf-wide .medium-btn {
+  margin-top: 17px;
+}
+
+.business-4 {
+  margin-bottom: 82px;
+}
+
+.business-6 {
+  margin-bottom: 203px;
+}
+
+.ability-block > img {
+  margin-left: -40px;
+}
+
+.ability-block > h4 {
+  margin-top: 33px;
+}
+
+.how-it-works-screen .checked-p {
+  font-size: 18px;
+}
+.checked-p-n {
+  font-size: 18px;
+}
+.how-it-works-screen .content-body {
+  margin-top: 38px;
+}
+
+.how-it-works-screen .content-body > .col {
+  padding: 33px 22px;
+}
+
+.how-it-works-screen .content-body > .col + .col {
+  margin-top: 42px;
+}
+
+.staff-screen .content-body {
+  text-align: center;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.staff-screen .text-block {
+  flex-grow: unset;
+  max-width: unset;
+  margin-left: unset;
+  padding: unset;
+}
+
+.staff-screen .text-block > p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.staff-screen .img-block {
+  max-height: 274px;
+  margin-top: 30px;
+  position: unset;
+  max-width: unset;
+  padding: unset;
+}
+
+.staff-screen .img-block > img {
+  max-height: 315px;
+}
+
+.contact-screen h3 {
+  font-size: 18px;
+}
+
+.contact-screen h3 + h3 {
+  margin-top: 30px;
+}
+
+.contact-screen .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px;
+  margin-top: 30px;
+}
+
+.contact-screen .checked-p {
+  font-size: 18px;
+  width: 100%;
+}
+
+.contact-screen .content-body .col-auto {
+  padding: 0;
+}
+
+.contact-screen .cbf-1 {
+  margin-top: 40px;
+}
+
+.large-p {
+  font-size: 28px;
+}
+
+.medium-p {
+  font-size: 16px;
+}
+
+.medium-input {
+  padding: 17px 21px;
+  font-size: 18px;
+}
+
+.medium-btn {
+  padding: 17px 18px;
+  font-size: 18px;
+}
+
+footer {
+  font-size: 16px;
+}
+
+.footer-content {
+  padding-top: 50px;
+}
+
+.footer-content .row + .row {
+  margin-top: 14px;
+}
+
+.footer-content-1 {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content-1 .appstore-btn + .playmarket-btn {
+  margin: 8px 0 0;
+}
+
+.footer-content-1 .appstore-btn {
+  margin-top: 30px;
+}
+
+.footer-menu {
+  padding: 0;
+  max-width: 46%;
+}
+
+.footer-menu {
+  flex-direction: column;
+}
+
+.footer-menu > .footer-menu {
+  max-width: 100%;
+}
+
+.footer-menu > .footer-menu + .footer-menu {
+  margin-left: 0;
+}
+
+.footer-menu-imp-item {
+  font-size: 18px;
+}
+
+.slim {
+  max-width: 100%;
+}
+
+.regular {
+  max-width: 100%;
+}
+
+.margin-top-xs {
+  margin-top: 15px;
+}
+
+.margin-top-l {
+  margin-top: 80px;
+}
+
+.margin-bottom-l {
+  margin-bottom: 80px;
+}
+
+.padding-top-xs {
+  padding-top: 80px;
+}

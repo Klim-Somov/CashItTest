@@ -1,0 +1,76 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/static/media/favicon.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'base/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'base/slick/slick-theme.css' %}">
+    {% block css %}
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+
+    {% include 'head.html' %}
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(95694902, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            trackHash: true,
+            ecommerce: "dataLayer"
+        });
+    </script>
+</head>
+<body>
+{% include 'include/_header.html' %}
+
+{% if messages %}
+    {% for mess in messages %}
+        <div class="info_message">
+            <div class="ms alert alert-success">
+                {{ mess }}
+            </div>
+        </div>
+    {% endfor %}
+{% endif %}
+
+{% block content %}
+{% endblock %}
+
+{% include 'include/_footer.html' %}
+
+</div>
+{% block scripts %}
+    {% include 'include/_modal.html' %}
+    <script src="{% static 'base/js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'base/slick/slick.min.js' %}"></script>
+    <script src='{% static "base/js/bootstrap.min.js" %}'></script>
+    <script src='{% static "base/js/script.js" %}'></script>
+    <script src='{% static "base/js/maskedinput.min.js" %}'></script>
+    <script src='{% static "base/js/mask.js" %}'></script>
+{% endblock %}
+
+{% include 'foot.html' %}
+</body>
+</html>

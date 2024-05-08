@@ -1,0 +1,252 @@
+.container {
+  max-width: 1136px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 22px;
+}
+.salary-checked-block {
+  margin-top: 100px;
+}
+
+.header-inscription {
+  font-size: 18px;
+}
+.cbf-2 .subform-1 .input-group-1 {
+  max-width: 44%;
+}
+
+.screen-1 .content-1 {
+  padding: 141px 0;
+}
+
+.screen-1 .content-1-1 {
+  max-width: 792px;
+  margin-right: 40px;
+}
+
+.large-btn {
+  padding: 38px 39px;
+}
+
+.screen-1 .content-1-1-row p {
+  max-width: 290px;
+}
+
+.screen-2 .content-2-1 {
+  padding-bottom: 57px;
+}
+
+.screen-2 .content-2-2 img {
+  max-height: 33px;
+}
+
+.screen-3 .content-3 {
+  padding: 100px 0;
+}
+
+.screen-3 .content-3-2 {
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.screen-4 .content-4 {
+  padding-top: 102px;
+  padding-bottom: 25px;
+}
+
+.screen-4 .content-4-1 {
+  padding-top: 34px;
+  padding-bottom: 38px;
+}
+
+.screen-4 .content-4-1-block {
+  padding: 32px 25px;
+  min-width: 336px;
+}
+
+.screen-4 .content-4-2-1 > img {
+  margin-left: unset;
+}
+
+.screen-4 .content-4-2-2 {
+  padding-top: 55px;
+  margin-left: unset;
+}
+
+.screen-4 .content-4-2-2 h2 {
+  font-size: 41px;
+}
+
+.screen-4 .content-4-2-2-block-2 {
+  padding: 39px 22px;
+}
+
+.screen-5 {
+  background-image: url(/static/media/bg5screen2.png);
+}
+
+.screen-5 .content-5 {
+  padding-top: 98px;
+  padding-bottom: 142px;
+}
+
+.screen-5 .content-5 .col-5 {
+  width: 48%;
+}
+
+.screen-5 .form-common .block-head p {
+  padding: 15px 0 0 0;
+}
+
+.counters {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.wide-form .box {
+  padding: 75px 75px;
+  z-index: 1;
+  margin-top: -14%;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 15px 20px 0px rgb(0 0 0 / 20%);
+}
+
+.business-1 {
+  padding-top: 100px;
+  min-height: 520px;
+}
+
+.business-1 > h1 {
+  max-width: 550px;
+}
+
+.business-1 > p {
+  margin-top: 52px;
+}
+
+.business-1 > .large-btn {
+  margin-top: 60px;
+}
+
+.business-1 > img {
+  right: 0;
+  top: 30px;
+  height: 520px;
+}
+
+.features {
+  padding-top: 100px;
+  min-height: 520px;
+}
+
+.features > h1 {
+  max-width: 550px;
+}
+
+.features > p {
+  margin-top: 52px;
+}
+
+.features > .large-btn {
+  margin-top: 60px;
+}
+
+.features > img {
+  right: 0;
+  top: 30px;
+  height: 520px;
+}
+
+.business-2 .ability-block {
+  max-width: 33.3%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.business-3 .cbf-wide {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.business-3 .medium-input {
+  padding: 17px 31px;
+}
+
+.margin-bottom-l {
+  margin-bottom: 105px;
+}
+
+.business-4 .how-it-works-screen .content-body {
+  margin-top: 48px;
+}
+
+.business-6 {
+  margin-bottom: 270px;
+}
+
+.how-it-works-screen .content-body > .col {
+  max-width: 558px;
+}
+
+.staff-screen .text-block {
+  flex-grow: 1.5;
+}
+
+.staff-screen .img-block {
+  text-align: right;
+  max-height: 625px;
+}
+
+.staff-screen .img-block > img {
+  max-height: 684px;
+}
+
+.contact-screen .content-body > .col.uato {
+  padding-right: 0;
+}
+
+.footer-content {
+  padding-top: 65px;
+}
+
+.footer-menu > .footer-menu + .footer-menu {
+  margin-left: 130px;
+}
+
+.slim {
+  max-width: 46%;
+}
+
+.regular {
+  max-width: 56%;
+}
+
+.margin-top-xs {
+  margin-top: 30px;
+}
+
+.margin-top-l {
+  margin-top: 100px;
+}
+
+.margin-bottom-l {
+  margin-bottom: 100px;
+}
+
+.padding-top-xs {
+  padding-top: 30px;
+}

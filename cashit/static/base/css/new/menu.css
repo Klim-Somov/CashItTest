@@ -1,0 +1,165 @@
+nav {
+    position: relative;
+}
+
+nav .row {
+    justify-content: space-between;
+}
+
+.menu {
+    z-index: 1;
+}
+
+@media (min-width: 1164px) {
+
+    /* Меню */
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    /* горизонтальная ориентация для пунктов */
+    nav ul li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    nav ul li ul li {
+        padding: 0;
+    }
+
+    nav a,
+    nav span {
+        display: block;
+        font-size: 22px;
+        line-height: 60px;
+        text-decoration: none;
+        user-select: none;
+    }
+
+    /* скрываем выпадающие списки по умолчанию*/
+    nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    /* отображаем выпадающий список при наведении */
+    nav ul li:hover>ul {
+        display: inherit;
+    }
+
+    /* следующий уровень выпадающего списка */
+    nav ul ul li {
+        min-width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+        background-color: #fff;
+    }
+
+    nav ul ul li a:hover {
+        color: #f23b33;
+    }
+
+    .menu>li>ul {
+        padding: 26px 16px;
+        margin-left: -16px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0px 15px 32px 0px rgb(83 82 82 / 100%);
+    }
+
+    .menu>li+li {
+        margin-left: 20px;
+    }
+
+    .menu>li a, .menu>li span {
+        padding: 0 5px;
+        white-space: nowrap;
+    }
+
+    .menu>li a:hover,
+    .menu>li span:hover {
+        color: #f23b33;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    /* Конец меню */
+}
+
+@media (max-width: 1163px) {
+        /* Сэндвич */
+        #menu-toggle {
+            display: none;
+        }
+    
+        .menu-btn {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 11px;
+            cursor: pointer;
+            z-index: 2;
+        }
+    
+        header {
+            padding: 22px 0;
+        }
+    
+        .menu-col {
+            display: flex;
+            align-items: center;
+        }
+    
+        /* контейнер меню */
+    
+        header ul {
+            list-style: none;
+        }
+    
+        .menu {
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+            width: 300px;
+            height: 100%;
+            margin: 0;
+            padding: 80px 0;
+            background-color: #fff;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+        }
+    
+        /* элементы меню */
+        .menu>li {
+            display: block;
+            padding: 12px 15px;
+            font-size: 20px;
+        }
+    
+        .menu ul {
+            padding-left: 20px;
+        }
+    
+        .menu li a {
+            text-decoration: none;
+        }
+    
+        #menu-toggle:checked~.menu {
+            visibility: visible;
+            left: 0;
+        }
+    
+        /* Конец сэндвича */
+}

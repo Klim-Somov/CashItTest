@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Cash&IT
+{% endblock %}
+
+{% block content %}
+    <section class="head-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="head-one-text">
+                        Моментальная выплата заработанных средств
+                        <span>фрилансерам, самозанятым и сотрудникам на трудовых договорах</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="head-two">
+        <div class="object">
+            <img src="/static/media/object.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <div class="head-two-block">
+                        <h2 class="title">
+                            Cash&IT - сервис, позволяющий моментально, прозрачно и легально осуществлять расчеты с физическими лицами
+                        </h2>
+                        <p class="head-two-text">
+                            Сервис полностью автоматизирует все этапы расчетов и предоставляет документы для налоговой службы и бухгалтерии.
+                        </p>
+                        <div class="head-two-btn">
+                            <a href="#" class="flex-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="head-two-img">
+                        <img src="/static/media/head-smart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="head-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heade-three-title">
+                        Cash&IT необходим всем юридическим лицам, услуги которым оказывают исполнители в рамках действия 422-ФЗ.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="head-four">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                    <div class="head-four-block">
+                        <h2 class="title">
+                            Как работает
+                        </h2>
+                        <ul class="head-four-text">
+                            <li>
+                                Клиент пополняет баланс в кредитной организации для выплат физлицам
+                            </li>
+                            <li>
+                                Исполнитель в приложении Cash&IT нажимет кнопку “Моментальные выплаты” и получает денежные средства на свой счет
+                            </li>
+                            <li>
+                                Cash&IT все проверит, произведет "выплату" и зарегистрирует доход в ФНС
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <div class="head-four-img">
+                        <img src="/static/media/head-mon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="head-two">
+        <div class="object">
+            <img src="/static/media/object-two.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <div class="head-two-block">
+                        <h2 class="title">
+                            Работаете с физлицами по трудовым договорам?
+                        </h2>
+                        <p class="head-two-text">
+                            Оплатим НДФЛ и предоставим отчетность.
+                        </p>
+                        <div class="head-two-btn">
+                            <a href="{% url 'business' %}#full-time-employees" class="flex-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="head-two-img">
+                        <img src="/static/media/debit-card.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="head-five">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="head-four-block">
+                        <h2 class="title">
+                            Тарифы
+                        </h2>
+                        <p class="head-five-text">
+                            Моментальная выплата от 0% (на карты банков из списка участников)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12 head-five-container head-four-mar">
+                    <div class="head-five-container-block">
+                        <p class="head-five-container-title">
+                            Тариф Старт
+                        </p>
+                        <p class="head-five-container-text">
+                            0,5% min 1000р/мес
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12 head-five-container">
+                    <div class="head-five-container-block">
+                        <p class="head-five-container-title">
+                            Тариф Стандарт
+                        </p>
+                        <p class="head-five-container-text">
+                            6000 р/мес при обороте до 3х.млн,
+                            10тыс свыше 3х.млн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="head-four-mes">
+                    <p class="head-four-mes-title">
+                        Оставьте заявку и мы расскажем подробнее
+                    </p>
+                    <a href="#" class="flex-btn head-four-mes-btn" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

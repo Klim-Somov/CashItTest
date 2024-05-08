@@ -1,0 +1,32 @@
+<div class="form-common black-shadow cbf-2 row">
+    <div class="col subform-1">
+        <h4>Не нашли, что искали? <span class="red">Задайте</span> нам вопрос</h4>
+        <form method="post">
+            <div class="row">
+                <div class="col input-group-1">
+                    {{ question_form.name }}
+                    {{ question_form.email }}
+                </div>
+                <div class="col">
+                    {{ question_form.subject }}
+                </div>
+            </div>
+            <input type="submit" class="medium-btn" value="Отправить">
+            {% csrf_token %}
+            <input type="hidden" name="button" value="Отправить">
+        </form>
+        <p class="margin-top-xxxs">Нажимая, вы принимаете <a href="/policy" target="_blank">условия обработки
+                персональных данных</a></p>
+    </div>
+    <div class="col subform-2">
+        <h4>Или <span class="red">закажите звонок</span></h4>
+        <form method="post">
+            {{ contact_form }}
+            <input type="submit" class="medium-btn" value="Заказать звонок">
+            {% csrf_token %}
+            <input type="hidden" name="button" value="Заказать звонок">
+        </form>
+        <p class="margin-top-xxxs">Нажимая, вы принимаете <a href="/policy" target="_blank">условия обработки
+                персональных данных</a></p>
+    </div>
+</div>

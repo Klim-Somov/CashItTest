@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    О сервисе
+{% endblock %}
+
+{% block content %}
+    <section class="service-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="name">
+                        О сервисе
+                    </h1>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="service-one-text-block">
+                        <h2 class="title">
+                            Сервис Cash&IT позволяет вам своевременно получать оплату от заказчика
+                        </h2>
+                        <p class="service-one-text">
+                            Команда сервиса Cash&IT работает на рынке финтех услуг более 15 лет, поэтому мы точно знаем, как максимально качественно и без рисков легализовать все схемы выплат физическим лицам.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="service-one-img">
+                        <img src="/static/media/service-people.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service-two">
+        <div class="object">
+            <img src="/static/media/object-two.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="service-two-logos">
+                        <img src="/static/media/logos.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="service-two-text">
+                        Cash&IT не первая разработка – за спиной уже не одно рабочее, эффективное и высокодоходное отраслевое решение. Эти решения активно растут вместе с рынками, на которых работают. Cash&IT новое направление, которое сформировалось в связи с потребностями рынка, о которых нам заявляли, как наши клиенты, так и представители власти.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="service-three-block">
+                        <p class="service-three-text">
+                            В штате команды работают опытные разработчики, которые, как и бизнес слышат потребности клиента и готовы быстро адаптировать и дорабатывать сервис под новые задачи.
+                        </p>
+                        <p class="service-three-bold-text">
+                            Хотите узнать подробнее о сервисе? Оставьте заявку, и наши менеджеры свяжутся с вами
+                        </p>
+                        <a href="#" class="flex-btn service-three-btn" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

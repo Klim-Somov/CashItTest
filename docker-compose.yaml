@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+  cashit-site:
+    image: docker.heggi.org/cashit/site:1.0.2
+    container_name: cashit-site-django
+    ports:
+      - "127.0.0.1:8000:80"
+    restart: unless-stopped
+    volumes: 
+      - /data/cashit-site:/app/data
+    environment: 
+      - SECRET_KEY=SUPERMEGASECRETKEY
+      - ALLOWED_HOSTS=.cash-it.ru
+      - EMAIL_HOST=smtp
+      - EMAIL_FROM=site@cash-it.ru
+      - EMAIL_TO=info@cash-it.ru
+  
+  smtp:
+    image: mwader/postfix-relay
+    container_name: cashit-site-smtp
+    restart: unless-stopped
+    environment:
+      - POSTFIX_myhostname=cash-it.ru

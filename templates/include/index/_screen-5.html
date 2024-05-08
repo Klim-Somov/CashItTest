@@ -1,0 +1,30 @@
+<div class="container-fluent screen-with-img screen-5">
+    <div class="container content-5">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h3>Мы работаем только с банками, понимающими ваш бизнес.</h3>
+                <h3>Наши клиенты — <span class="red">крупные игроки рынка</span>, которые получают соответствующее
+                    обслуживание.</h3>
+            </div>
+            <div class="col-5">
+                <div class="container form-common">
+                    <div class="row block-head">
+                        <h4>Оставьте ваши данные и получите коммерческое предложение</h4>
+                        <p>Менеджер свяжется с вами в ближайшее время</p>
+                    </div>
+                    <div class="row block-body">
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form }}
+                            <input type="hidden" name="button" value="Получить КП">
+                            <input type="submit" class="medium-btn" value="Получить КП">
+                        </form>
+                    </div>
+                    <div class="row block-foot">
+                        <p>Нажимая, вы принимаете <a href="/policy" target="_blank">условия обработки персональных данных</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

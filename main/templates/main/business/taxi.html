@@ -1,0 +1,89 @@
+{% extends "new_base.html" %}
+{% load static %}
+
+{% block title %}
+Рынок такси
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluent margin-top-s taxi-1">
+    <div class="container business-1">
+        <h1>Рынок такси</h1>
+        <p class="slim">
+            Коробочное решение для выплат водителям
+            такси. Интеграция с основными службами
+            заказа такси.
+        </p>
+        <a class="large-btn" href="#answer-request">Узнать о возможностях сервиса</a>
+        <img src="/static/media/taxist.png">
+    </div>
+</div>
+
+<div class="container-fluent padding-top-s">
+    <div class="container business-2">
+        <h2>Какие возможности дает сервис</h2>
+        <div class="row abilities">
+            <div class="ability-block">
+                <img src="/static/media/integration.png">
+                <h4>Интеграция со всеми агрегаторами такси</h4>
+                <p>Сервис интегрирован с Яндекс.Такси, Ситимобил, Такси Мастер, Гутакс, Таксовичкоф в рамках одного
+                    личного кабинета</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/driver.png">
+                <h4>Привлечение водителей в ваш таксопарк</h4>
+                <p>Авторегистрация водителей в ваш парк. С определенного города или со всей России</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/rubuparrow.png">
+                <h4>Низкая комиссия за вывод средств, от 0,7%</h4>
+                <p>Фиксированные ставки комиссий, возможность регулировать ставки для водителей через личный кабинет
+                    сервиса</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/agreement.png">
+                <h4>Дистанционное подписание договора с водителем</h4>
+                <p>Сервис позволят дистанционно подписывать оферты с водителями и выгружать статусы и даты подписания в
+                    рамках каждого парка</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/shield.png">
+                <h4>Защита от недобросовестных водителей</h4>
+                <p>Встроенная система антифрод защиты для каждого водителя и автоматическая блокировка подозрительных
+                    водителей на основе данных bigdata и антифрод метрик</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/bag.png">
+                <h4>Поможем выстроить безопасную и эффективную модель бизнеса</h4>
+                <p>Обучаем руководителей таксопарков как эффективно работать в сфере такси используя безопасные
+                    бизнес-модели и применяя работающие инструменты</p>
+            </div>
+            <div class="ability-block">
+                <img src="/static/media/application.png">
+                <h4>Разработаем приложение с вашим брендом</h4>
+                <p>Разрабатываем приложение с вашим брендом со всеми возможностями сервиса — быстро, доступно и
+                    эффективно.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluent margin-top-xs">
+    <div class="container business-3">
+        {% include 'include//_callback_form.html' %}
+    </div>
+</div>
+
+<div class="business-4 margin-top-l">
+    {% include 'include//common_screens/_how_it_works.html' %}
+</div>
+<div class="business-5 margin-top-l">
+    {% include 'include//common_screens/_staff.html' %}
+</div>
+<div class="business-6 margin-top-l margin-bottom-l">
+    {% include 'include//common_screens/_contact_with_us.html' %}
+</div>
+
+{% endblock %}
